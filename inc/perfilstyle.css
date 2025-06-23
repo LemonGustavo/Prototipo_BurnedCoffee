@@ -1,0 +1,146 @@
+body {
+  display: flex; /* Enable flexbox for the body */
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Ensure body takes up full viewport height */
+  margin: 0;
+  padding: 0;
+  font-family: "MuseoModerno", serif;
+}
+
+#conteudo-principal {
+  height: 60px;
+  background-color: blue; /* Keep your blue background for now */
+  flex-direction: column;
+}
+
+footer {
+  background-color: rgb(12, 32, 97); /* Or use Bootstrap classes */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+#barra-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 10;
+    background-color: #1F3A93;
+    padding: 20px;
+    transition: width 0.3s ease-in-out; /* Transição suave */
+    color: white;
+    overflow: hidden;
+}
+  
+#barra-lateral.fechada {
+    width: 75px;
+}
+  
+#conteudo {
+    margin-left: 250px; /* Ajusta o conteúdo para a barra lateral aberta */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+  
+#conteudo.fechado {
+    margin-left: 0; /* Ajusta o conteúdo para a barra lateral fechada */
+}
+  
+#botao-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Posição inicial ao lado da barra lateral */
+    z-index: 11;
+    padding: 10px;
+    background-color: #1F3A93;
+    color: white;
+    cursor: pointer;
+    transition: left 0.3s ease-in-out; /* Adiciona transição ao botão */
+}
+  
+#botao-menu.fechado {
+    left: 20px; /* Ajusta a posição do botão quando a barra lateral está fechada */
+    background-color: #1F3A93;;
+    font-size: 16px;
+}
+.barra-azul {
+  height: 60px; /* Altura desejada */
+}
+.imagens-canto {
+  position: absolute; /* Ou fixed, dependendo do seu layout */
+  top: 0; /* Ajuste a distância do topo */
+  right: 0; /* Ajuste a distância da direita */
+  display: flex; /* Alinha os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente */
+  margin: 10px; /* Adiciona margem para espaçamento */
+  }
+
+.imagens-canto img {
+  margin-left: 10px; /* Espaçamento entre as imagens */
+  width: 50px;
+  max-height: 80px; /* Altura máxima das imagens (ajuste conforme necessário) */
+}
+.barra-unidades {
+  display: flex; /* Ativa o Flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  background-color: transparent; /* Mantém o fundo transparente */
+}
+
+.barra-unidades h2 {
+  color: white; /* Mantém a cor branca para o título */
+  padding-left: 5px;
+  font-size: 24px;
+}
+.imagens-barra {
+  width: 50px;
+  padding-right: 5px;
+}
+
+#segundo-conteudo { /* Novo ID para o segundo conteúdo */
+  padding: 20px;
+  margin: auto;
+}
+
+.container_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-title {
+  font-size: 50px;
+}
+
+.progress {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-image: linear-gradient( to right,  #005c08, #1eb826,  #8fff80 );
+  border-radius: 10px;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+
